@@ -10,21 +10,6 @@
 ## Cài đặt môi trường và tổng quan về wxWidgets
 - Do việc sử dụng wxWidgets để tạo GUI nên cần thêm vào Visual Studio môi trường để có thể sử dụng được: [LINK HƯỚNG DẪN CÀI ĐẶT](https://www.youtube.com/watch?v=ONYW3hBbk-8&list=PLFk1_lkqT8MbVOcwEppCPfjGOGhLvcf9G&index=2&ab_channel=OttoBotCode)
 
-
-
-```python
-import foobar
-
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
-```
-
 ## Giải thích một số dòng lệnh quan trọng trong project
 
 - Chúng ta sẽ tập trung chủ yếu vào 2 file chính Mainframe.cpp và User.cpp (Các thông tin về thuộc tính và hàm xem tại file .h)
@@ -41,8 +26,8 @@ void MainFrame::BindEvents()
     btn_Up.button->Bind(wxEVT_BUTTON, &MainFrame::OnButtonClick, this);
     btn_Down.button->Bind(wxEVT_BUTTON, &MainFrame::OnButtonClick, this);
 }
-# Hàm auto&btn sẽ tự động tìm kiếm các ID riêng tương ứng đối với từng tầng 
-# Nhìn thấy được đối với mỗi nút sẽ đều thao tác với một hàm là OnButtonClick
+// Hàm auto&btn sẽ tự động tìm kiếm các ID riêng tương ứng đối với từng tầng 
+// Nhìn thấy được đối với mỗi nút sẽ đều thao tác với một hàm là OnButtonClick
 ```
 - Tiếp tục là hàm xử lý các sự kiện khi có EVENT nhấn các nút xảy ra. 
 ```cpp
