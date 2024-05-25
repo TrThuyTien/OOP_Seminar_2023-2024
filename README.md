@@ -4,13 +4,48 @@
 
 ## Tổng quan về project
 
-- Một project mô phỏng một chiếc thang máy tại UIT sử dụng wxWidget để tạo GUI và được viết bằng ngôn ngữ C++. 
+- Một project ứng dụng Lập trình hướng đối tượng kết hợp framework wxWidget để mô phỏng một chiếc thang máy tại UIT. 
+
+## Tính năng
+- Bảng điều khiển (các nút bấm) của thang máy
+- Nút chuông dùng để cảnh báo
+- Mở cửa, đóng cửa
+- Hiện thị số người và cân nặng hiện tại của thang máy
 
 
-## Cài đặt môi trường và tổng quan về wxWidgets
-- Do việc sử dụng wxWidgets để tạo GUI nên cần thêm vào Visual Studio môi trường để có thể sử dụng được: [LINK HƯỚNG DẪN CÀI ĐẶT](https://www.youtube.com/watch?v=ONYW3hBbk-8&list=PLFk1_lkqT8MbVOcwEppCPfjGOGhLvcf9G&index=2&ab_channel=OttoBotCode)
+## Cài đặt 
+### Yêu cầu hệ thống
+- Ngôn ngữ: C++
+- Phần mềm code: Visual Code
+- Framework: wxWidget [LINK HƯỚNG DẪN CÀI ĐẶT](https://www.youtube.com/watch?v=ONYW3hBbk-8&list=PLFk1_lkqT8MbVOcwEppCPfjGOGhLvcf9G&index=2&ab_channel=OttoBotCode)
 
-## Giải thích một số dòng lệnh quan trọng trong project
+### Xây dựng giao diện (GUI)
+- Tạo khung cho dự án (ở file App.h và App.cpp)
+```cpp
+bool App::OnInit()
+{
+    MainFrame* mainFrame = new MainFrame("C++ GUI");
+    mainFrame->SetClientSize(800, 700);
+    mainFrame->SetBackgroundColour(wxColor(246, 241, 147));
+    mainFrame->Show();
+    return true;
+}
+```
+
+- Tạo các nút bấm (ví dụ tạo 9 nút bấm nằm ở trong thang máy, các nút còn lại tương tự)
+```cpp
+for (int i = 0; i < 10; ++i) {
+    Button btn;
+    if (i % 2 == 0) {
+        if (i == 0) btn.button = new wxButton(panel, ID_Button0 + i, "G", wxPoint(100, 60 + i * 30), wxSize(50, 40));
+        else btn.button = new wxButton(panel, ID_Button0 + i, std::to_string(i), wxPoint(100, 60 + i * 30), wxSize(50, 40));
+    }
+    else btn.button = new wxButton(panel, ID_Button0 + i, std::to_string(i), wxPoint(200, 60 + (i - 1) * 30), wxSize(50, 40));
+    btn.status = false;
+    floorButtons.push_back(btn);
+}
+```
+### Giải thích một số dòng lệnh quan trọng trong project
 
 - Chúng ta sẽ tập trung chủ yếu vào 2 file chính Mainframe.cpp và User.cpp (Các thông tin về thuộc tính và hàm xem tại file .h)
 - Trước hết chúng ta sẽ xem qua việc xử lý các nút ra sao khi đã có GUI.
@@ -193,3 +228,7 @@ void MainFrame::MoveElevator()
 
 
 }
+```
+
+# Giấy phép
+# Liên hệ
