@@ -1,6 +1,6 @@
-# Seminar OOP BHT Đoàn khoa MMT&TT
+# Seminar OOP
 
-- Đây là project thuộc BHT Đoàn khoa MMT&TT. Buổi Seminar OOP diễn ra vào ngày 25/05/2024
+- Đây là project made by OOP 2 Món. Buổi Seminar OOP diễn ra vào ngày 25/05/2024
 
 ## Tổng quan về project
 
