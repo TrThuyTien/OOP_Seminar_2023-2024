@@ -230,7 +230,7 @@ void MainFrame::MoveElevator()
 }
 ```
 
-# Giấy phép
+# License
 MIT License
 
 Copyright (c) 2024 TrThuyTien
@@ -254,3 +254,4 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 # Liên hệ
+Author: Phạm Thái Bảo - mail: 21520156@gm.uit.edu.vn
