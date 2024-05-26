@@ -247,6 +247,49 @@ public:
 	void setUser();
 };
 ```
+- Tạo ngẫu nhiên số người khi nhấn nút inside (phần này có thể thay thế bằng dữ liệu thực tế nếu có) 
+```cpp
+void User::addUser()
+{
+	this->soluong += 1 + rand() % 10;
+}
+```
+- Trừ số lượng ngẫu nhiên User khi tới 1 tới 1 tầng
+```cpp
+void User::subUser()
+{
+	int currentUser = this->soluong - 1;
+	if (currentUser > 0)
+		this->soluong -= (rand() % currentUser) + 1;
+}
+```
+- Lấy cân nặng random ứng với số lượng tạo ra
+```cpp
+int User::getWeightrandom()
+{
+	int preWeight = this->Weight;
+	this->Weight += (rand() % 70 + 50) * soluong;
+	return preWeight;
+}
+```
+- Trừ cân nặng ứng với từng user đi ra 
+```cpp
+void User::truWeight()
+{
+	int newWeight = this->Weight;
+	int moi = (rand() & 70 + 50) * soluong;
+	if (newWeight - moi > 50)
+	{
+		this->Weight -= moi;
+	}
+	else 
+	{
+		this->Weight = 50;
+	}
+
+}
+```
+
 # License
 MIT License
 
