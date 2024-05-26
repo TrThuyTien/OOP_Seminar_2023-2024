@@ -273,4 +273,5 @@ SOFTWARE.
 # Liên hệ
 - Author: Phạm Thái Bảo - mail: 21520156@gm.uit.edu.vn
 - Co-Author: Đỗ Quang Trung - mail: 23521673@gm.uit.edu.vn
-- Co-Author: Trần Thị Thùy Tiên - mail: 23521588@gmail.uit.edu.vn
+- Co-Author: Trần Thị Thùy Tiên - mail: 23521588@gm.uit.edu.vn
+- Co-Author: Nguyễn Lê Hạ My - mail: 23520964@gm.uit.edu.vn
