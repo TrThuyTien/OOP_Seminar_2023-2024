@@ -255,3 +255,4 @@ SOFTWARE.
 
 # Liên hệ
 Author: Phạm Thái Bảo - mail: 21520156@gm.uit.edu.vn
+Co-Author: Đỗ Quang Trung - mail: 23521673@gm.uit.edu.vn
