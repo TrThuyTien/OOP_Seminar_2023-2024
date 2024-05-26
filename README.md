@@ -17,7 +17,7 @@
 ### Yêu cầu hệ thống
 - Ngôn ngữ: C++
 - Phần mềm code: Visual Code
-- Framework: wxWidget [LINK HƯỚNG DẪN CÀI ĐẶT](https://www.youtube.com/watch?v=ONYW3hBbk-8&list=PLFk1_lkqT8MbVOcwEppCPfjGOGhLvcf9G&index=2&ab_channel=OttoBotCode)
+- Framework: [wxWidget](https://www.youtube.com/watch?v=ONYW3hBbk-8&list=PLFk1_lkqT8MbVOcwEppCPfjGOGhLvcf9G&index=2&ab_channel=OttoBotCode)
 
 ### Xây dựng giao diện (GUI)
 - Tạo khung cho dự án (ở file App.h và App.cpp)
