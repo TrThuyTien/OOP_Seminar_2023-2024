@@ -156,7 +156,7 @@ void MainFrame::OnTimer(wxTimerEvent& event)
     }
 }
 ```
-Hàm di chuyển thang máy, lấy tầng được ưu tiên lên/hay xuống ở hàng đợi queue, lấy giá trị đầu tiên, khi đi tới lập tức bỏ tầng đó ra khỏi hàng đợi
+- Hàm di chuyển thang máy, lấy tầng được ưu tiên lên/hay xuống ở hàng đợi queue, lấy giá trị đầu tiên, khi đi tới lập tức bỏ tầng đó ra khỏi hàng đợi
 ```cpp
 void MainFrame::MoveElevator()
 {
