@@ -201,10 +201,6 @@ void MainFrame::MoveElevator()
             std::this_thread::sleep_for(std::chrono::seconds(2)); // Thời gian cửa thang máy mở
             bellLabel->SetLabel("");
         }
-
-
-
-
     }
 ```
 - Cập nhật thông tin trên màn hình thang máy khi tất cả mọi người đi ra
@@ -230,6 +226,27 @@ void MainFrame::MoveElevator()
 }
 ```
 
+- Tạo đối tượng User -> để kiểm soát cân nặng và số người đi vào
+```cpp
+class User
+{
+private:
+	int Weight;
+	int Height;
+public:
+	int soluong; // Số lượng người
+	int luot;
+	User();
+	int getWeight();
+	int getWeightrandom(); // Hàm lấy tổng số cân nặng khi có một nhóm người vào thang máy
+	void truWeight(); // Trừ cân nặng khi có người đi ra
+	void setWeight(int weight);
+	void subUser(); // Trừ số người khi có người đi ra
+	void addUser(); // Cộng thêm số người khi có người đi vào thang máy
+	int getUser();
+	void setUser();
+};
+```
 # License
 MIT License
 
@@ -256,3 +273,4 @@ SOFTWARE.
 # Liên hệ
 - Author: Phạm Thái Bảo - mail: 21520156@gm.uit.edu.vn
 - Co-Author: Đỗ Quang Trung - mail: 23521673@gm.uit.edu.vn
+- Co-Author: Trần Thị Thùy Tiên - mail: 23521588@gmail.uit.edu.vn
